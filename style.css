@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap');
+
+body {
+  background: #fdfaf6;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  color: #444;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  background-color: #f2eee9;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  color: #4c5c68;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #6a7b89;
+}
+
+section {
+  padding: 3rem 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: #4c5c68;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.event {
+  background: #fff;
+  border-left: 5px solid #b8c0a8;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(76, 92, 104, 0.1);
+}
+
+.event h3 {
+  margin-top: 0;
+  color: #4c5c68;
+}
+
+
+.tight-heading {
+    margin-bottom: 6px;
+  }
+  
+  .tight-paragraph {
+    margin-top: 0;
+    text-align: center;
+  }
+  
+.letter-section button {
+  margin-top: 1rem;
+}
+
+.music-player {
+    max-width: 500px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  
+.letter {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: auto;
+  display: block;
+  animation: fadeIn 1s ease-in-out;
+  font-family: inherit;
+  color: #4c5c68;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.letter-button-wrapper {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .styled-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 580;
+    font-family: inherit;
+    background-color: #4c5c68; 
+    color: white;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(55, 54, 69, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .styled-button:hover {
+    background-color: #6a7b89; /* darker pink on hover */
+  }
+
+  .timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem 0;
+  }
+  
+  /* Vertical gray line centered between events */
+  .timeline::before {
+    content: "";
+    position: absolute;
+    top: 50px; /* starts lower, behind the first event */
+    bottom: 0;
+    width: 4px;
+    background: #ccc;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+  }
+  
+  
+  /* Individual event styling */
+  .event {
+    position: relative;
+    background: #fff;
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    width: 60%;
+    box-shadow: 0 4px 8px rgba(76, 92, 104, 0.1);
+  } 
+  
+/* Style for the letter*/
+  
+.letter-button-wrapper {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .letter-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 12px;
+    font-weight: 580;
+    font-family: inherit;
+    background-color: #4c5c68; 
+    color: white;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(55, 54, 69, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .letter-button:hover {
+    background-color: #6a7b89; /* darker pink on hover */
+  }
+
+  
